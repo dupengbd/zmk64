@@ -99,20 +99,3 @@
     };
 };
 
-/ {
-    status-screen {
-        compatible = "zmk,status-screen";
-        width = <128>;
-        height = <64>;
-        #address-cells = <1>;
-        #size-cells = <1>;
-
-        battery_widget {
-            compatible = "zmk,widget-battery";
-            x = <10>;
-            y = <10>;
-            width = <100>;
-            height = <20>;
-        };
-    };
-};
