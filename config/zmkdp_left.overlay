@@ -127,3 +127,54 @@
         brightness-steps = <5>;
     };
 };
+
+
+
+
+
+
+
+
+/ {
+    status-screen {
+        compatible = "zmk,status-screen";
+        width = <128>;
+        height = <64>;
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+        /* 示例widget，你可以自由改x,y坐标，y范围0~63 */
+        layer_widget@0 {
+            compatible = "zmk,widget-layer";
+            x = <0>;
+            y = <0>;
+            width = <64>;
+            height = <16>;
+        };
+
+        battery_widget@1 {
+            compatible = "zmk,widget-battery";
+            x = <0>;
+            y = <18>;
+            width = <64>;
+            height = <16>;
+        };
+
+        output_widget@2 {
+            compatible = "zmk,widget-output";
+            x = <0>;
+            y = <38>;
+            width = <64>;
+            height = <16>;
+        };
+
+        mod_widget@3 {
+            compatible = "zmk,widget-modifiers";
+            x = <0>;
+            y = <58>;
+            width = <128>;
+            height = <6>;
+        };
+    };
+};
+
