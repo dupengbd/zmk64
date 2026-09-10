@@ -135,6 +135,7 @@
 
 
 
+
 / {
     status-screen {
         compatible = "zmk,status-screen";
@@ -143,8 +144,7 @@
         #address-cells = <1>;
         #size-cells = <1>;
 
-        /* 示例widget，你可以自由改x,y坐标，y范围0~63 */
-        layer_widget@0 {
+        layer_widget {
             compatible = "zmk,widget-layer";
             x = <0>;
             y = <0>;
@@ -152,7 +152,7 @@
             height = <16>;
         };
 
-        battery_widget@1 {
+        battery_widget {
             compatible = "zmk,widget-battery";
             x = <0>;
             y = <18>;
@@ -160,7 +160,7 @@
             height = <16>;
         };
 
-        output_widget@2 {
+        output_widget {
             compatible = "zmk,widget-output";
             x = <0>;
             y = <38>;
@@ -168,7 +168,7 @@
             height = <16>;
         };
 
-        mod_widget@3 {
+        mod_widget {
             compatible = "zmk,widget-modifiers";
             x = <0>;
             y = <58>;
@@ -177,4 +177,3 @@
         };
     };
 };
-
