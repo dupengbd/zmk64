@@ -51,7 +51,6 @@
         segment-remap;
         com-invdir;
         com-sequential;
-        inversion-on;
     };
 };
 / {
